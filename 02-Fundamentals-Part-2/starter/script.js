@@ -549,15 +549,15 @@ for (let rep = 1; rep <= 23; rep++)
 console.log(`Lifting weigths repetition ${rep} yaay!!`)
 */
 
-const jonas = [
-    'Jonas',
-    'Schmedtmann',
-    2037 - 1991,
-    'teacher',
-    ['Michael', 'Peter', 'Steven']
-];
+// const jonas = [
+//     'Jonas',
+//     'Schmedtmann',
+//     2037 - 1991,
+//     'teacher',
+//     ['Michael', 'Peter', 'Steven']
+// ];
 
-const types = [];
+// const types = [];
 // for (let i = 0; i < jonas.length; i++ ) {
 //     console.log(jonas[i])
 // }
@@ -574,10 +574,82 @@ for (let i = -5; i < 5; i++){
 console.log({theNewArray})
 */
 
-for (let i = 0; i < jonas.length; i++) {
-    console.log(jonas[i]);
+// for (let i = 0; i < jonas.length; i++) {
+//     console.log(jonas[i]);
 
-    types[i] = typeof jonas[i];
+//     // types[i] = typeof jonas[i];
+//     types.push(typeof jonas[i])
+// }
+
+// types.unshift('mina');
+
+// console.log(types);
+
+// const years2 = [1964, 2001, 1212, 1432, 1521, 1999];
+// const years3 = [1983, 2011, 1969];
+// const years4 = [1994, 2001, 1953, 1826, 1923];
+// const age = [];
+
+// function calcStudentsCurrentAge (yearsOfStudents) {
+    //     const studentsCurrentAge = []
+    //     // for ( let i = 0; i < yearsOfStudents.length; i++) {
+        //     //     const currentYear = new Date().getFullYear()
+        //     //     const yearOfBirth = yearsOfStudents[i]
+        //     //     const currentAge = currentYear - yearOfBirth
+        //     //     // age[i] = currentAge
+//     //     studentsCurrentAge.push({currentAge,currentYear, yearOfBirth})
+//     // }
+//     let count = 0;
+//     while(count < yearsOfStudents.length){
+    //         const currentYear = new Date().getFullYear()
+    //         const yearOfBirth = yearsOfStudents[count]
+    //         const currentAge = currentYear - yearOfBirth
+    //         // age[i] = currentAge
+    //         studentsCurrentAge.push({currentAge,currentYear, yearOfBirth, count})
+    //         console.log(count)
+    //         count++
+//     }
+//     return studentsCurrentAge
+// }
+
+// const year1StudentAge = calcStudentsCurrentAge(years1)
+// const year2StudentAge = calcStudentsCurrentAge(years2)
+// const year3StudentAge = calcStudentsCurrentAge(years3)
+// const year4StudentAge = calcStudentsCurrentAge(years4)
+
+// console.log({year1StudentAge,year2StudentAge})
+
+// // console.log(age);
+// // const currentYear = new Date()
+// // console.log({currentYear})
+
+
+const years1 = [1991, 2007, 1969, 2020];
+const age = [];
+
+for (let i = 0; i < years1.length; i++) {
+    const studentsAge = 2022 - years1[i];
+    age.push(studentsAge);
 }
+// console.log(age)
 
-console.log(types)
+const june = [
+    'Saiyou',
+    26,
+    'Biochemist',
+    'Niger Delta University',
+    'Elliot',
+    28,
+    'Software Engineer',
+    'Extremely Smart and sweet',
+    ['Chemical', 'Preye', 'Doubra', 'James', 'Wisdom' ]
+];
+
+// for ( let i = 0; i < june.length; i++) {
+//     if (typeof june[i] === 'number') break
+//     console.log(june[i], typeof june[i])
+// }
+
+for (let i = june.length - 1; i >= 0; i--) {
+    console.log(i, june[i])
+}
